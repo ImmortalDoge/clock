@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Gentium+Plus:ital@1&display=swap');
+
+body {
+    font-family: 'Arima', cursive;
+    background-image: linear-gradient(to right, #20becf, #55087e)
+}
+
+.flexContainer {
+    width: 95vw;
+    height: 95vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #000;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#clock h1, span {
+    display: inline;
+    margin: 0 5px;
+    font-size: 4rem;
+}
+
+#date {
+    text-align: center;
+}
+
+#colourChange{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+}
+
+@media(max-width:768px) {
+    #clock {
+        text-align: center;
+        width: 100%;
+    }
+    
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media(max-width:480px) {
+    #clock h1, span {
+        font-size: 2.2rem;
+        margin: 0 2px;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
